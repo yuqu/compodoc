@@ -62,6 +62,10 @@ export class AngularDependencies extends FrameworkDependencies {
 
     constructor(files: string[], options: any) {
         super(files, options);
+
+        if (options) {
+            logger.silent = !options.silent;
+        }
     }
 
     public getDependencies() {
