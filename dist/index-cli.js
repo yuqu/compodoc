@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var application = require('./application-23d90d59.js');
+var application = require('./application-eda42ae7.js');
 var fs = require('fs-extra');
 var path = require('path');
 var Ast = require('ts-simple-ast');
