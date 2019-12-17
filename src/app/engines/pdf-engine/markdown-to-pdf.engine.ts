@@ -1,7 +1,5 @@
 import * as _ from 'lodash';
 
-const decache = require('decache');
-
 export class MarkdownToPDFEngine {
     private static instance: MarkdownToPDFEngine;
 
@@ -10,7 +8,6 @@ export class MarkdownToPDFEngine {
     private convertedTokens = [];
 
     private constructor() {
-        decache('marked');
         this.markedInstance = require('marked');
 
         const renderer = new this.markedInstance.Renderer();

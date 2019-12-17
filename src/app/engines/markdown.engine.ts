@@ -4,8 +4,6 @@ import * as path from 'path';
 
 import FileEngine from './file.engine';
 
-const decache = require('decache');
-
 export interface markdownReadedDatas {
     markdown: string;
     rawData: string;
@@ -21,7 +19,6 @@ export class MarkdownEngine {
 
     private static instance: MarkdownEngine;
     private constructor() {
-        decache('marked');
         this.markedInstance = require('marked');
 
         const renderer = new this.markedInstance.Renderer();
